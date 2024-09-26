@@ -32,5 +32,3 @@ def generate_pass(password):
     salt = bcrypt.gensalt()
 
     hashed = bcrypt.hashpw(bytes, salt)
-
-    return hashed
