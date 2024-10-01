@@ -4,8 +4,6 @@ import uuid
 import bcrypt
 from faker import Faker
 
-from user import User
-
 fake = Faker()
 
 
@@ -15,7 +13,7 @@ def generate_users(num_users):
     print(f"Generating {num_users} users")
     print("_____________________________________________________________________")
     for _ in range(num_users):
-        user = User(
+        user = user(
             id=fake.uuid4(),
             username=fake.user_name(),
             email=fake.email(),
@@ -32,3 +30,5 @@ def generate_pass(password):
     salt = bcrypt.gensalt()
 
     hashed = bcrypt.hashpw(bytes, salt)
+
+    return hashed

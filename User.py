@@ -1,7 +1,9 @@
+import uuid
+
 import utils
 
 
-class User():
+class User:
     def __init__(self, id, username, email, password):
         self.id = id
         self.username = username
@@ -10,5 +12,11 @@ class User():
 
     def __str__(self):
         return f"id : {self.id},Username: {self.username}, Email: {self.email}, Password: {self.password}"
+
+
+
+
+
+
 
 

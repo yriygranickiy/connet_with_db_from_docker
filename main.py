@@ -1,4 +1,5 @@
-import servise_requests
+import menu
+import service_crud
 import test_connection
 import conection
 import utils
@@ -6,7 +7,7 @@ import utils
 
 def main():
 
-    servise_requests.get_user()
+    menu.menu()
 
 
 if __name__ == "__main__":
