@@ -1,8 +1,4 @@
 import menu
-import service_crud
-import test_connection
-import conection
-import utils
 
 
 def main():
