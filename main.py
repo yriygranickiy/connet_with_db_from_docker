@@ -1,14 +1,12 @@
+from create_db_warehouses import create_db_tables
 import menu
-import service_crud
-import test_connection
-import conection
-import utils
 
 
 def main():
 
-    menu.menu()
+    create_db_tables.create_tables()
 
+    # menu.menu()
 
 if __name__ == "__main__":
     main()

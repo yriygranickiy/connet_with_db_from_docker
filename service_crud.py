@@ -5,7 +5,6 @@ con = conection.connection_db()
 
 cur = con.cursor()
 
-
 def create_user(user):
 
     service_crud_impl.insert_into_db_user(cur, user)
@@ -14,17 +13,15 @@ def create_user(user):
 
 def get_user():
 
-    service_crud_impl.select_users_where_email_start_b(cur)
+    service_crud_impl.select_users_where_email_start__any_symbols(cur)
 
     con.commit()
-
 
 def get_all_users():
 
     service_crud_impl.select_all_users(cur)
 
     con.commit()
-
 
 def delete_user_by_username(username):
 

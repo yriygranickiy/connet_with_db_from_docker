@@ -1,7 +1,3 @@
-import uuid
-
-import utils
-
 
 class User:
     def __init__(self, id, username, email, password):
